@@ -1,0 +1,61 @@
+:root {
+  --color-pink: #ffe6ef;
+  --color-white: #fff;
+  --color-black: #333;
+  --color-text-pink: #ff7b9b;
+  --color-heart: #ff4f70;
+}
+
+body {
+  font-family: "Dancing Script", cursive, Arial, sans-serif;
+  background: linear-gradient(135deg, var(--color-pink) 0%, #fff 100%);
+  margin: 0; font-size: 1.07em;
+}
+
+.centered-screen {
+  display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh;
+}
+
+.big-btn {
+  font-size: 1.4rem; border: none; border-radius: 45px; padding: 18px 36px;
+  background: linear-gradient(90deg, #fa85b1, #e252ad, #64b6f5); color: white; cursor: pointer;
+  box-shadow: 0 4px 18px #fa85b163; margin-top: 24px; transition: background 0.3s, transform 0.1s;
+}
+.big-btn:hover, .big-btn:active { background: linear-gradient(90deg, #64b6f5, #fa85b1, #e252ad); transform: scale(1.03); }
+
+.heart-greeting { text-align: center; color: #e8477b; margin-top: 30px; }
+.title { text-align: center; margin-top: 34px; }
+.title .happy span { font-size: 2.2rem; color: var(--color-heart);}
+.title .birthday span { font-size: 1.17rem; color: var(--color-text-pink);}
+.sticky-note {
+  max-width: 340px; margin: 24px auto; padding: 17px; background: #fff8f2;
+  border: 3px dashed #fa85b1; border-radius: 14px 36px 18px 32px; box-shadow: 0 2px 14px #ffe6ef; color: #b54876;
+}
+.sticky-note span { font-size: 2rem; display: block; text-align: center; margin-bottom: 8px; }
+.pamper-message {
+  max-width:540px; margin:34px auto; background:#fff8f2; border-radius:18px; box-shadow:0 2px 14px #ffe6ef; padding:24px 20px; color:#b54876; font-size:1.11em;
+}
+.photo-gallery, .video-gallery { display: flex; flex-wrap: wrap; gap: 32px; justify-content: center; margin: 30px 0; }
+.photo-frame, .video-frame {
+  background: #fff0e0; border: 4px solid #fa85b1; border-radius: 26px;
+  box-shadow: 0 8px 18px rgba(249,128,154,0.17); padding: 16px; text-align: center; transition: .3s; width: 300px;
+}
+.photo-frame img { width:96%; border-radius: 20px; }
+.photo-frame:hover, .video-frame:hover { transform: translateY(-6px) scale(1.025); }
+.video-frame { background: #ffe6ef; border: 4px solid #ff4f70; width: 380px; }
+.video-frame iframe { width: 100%; height: 240px; border-radius: 14px; }
+.caption { margin-top: 12px; font-size: 1.03rem; color: #e8477b; }
+.open-letter-btn { text-align:center; margin:30px 0;}
+.reactive-btn {
+  padding:12px 32px; border-radius:40px;
+  background: linear-gradient(90deg, #fa85b1, #e252ad, #64b6f5); color:white; font-size:1.19rem; border:none;
+  cursor:pointer; box-shadow: 0 2px 16px #fa85b163; transition: background 0.4s, transform 0.13s;
+}
+.reactive-btn:hover,.reactive-btn:active{ background:linear-gradient(90deg,#64b6f5,#fa85b1,#e252ad); transform:scale(1.04);}
+.box__letter { position:fixed;top:0;left:0;width:100%;height:100%;display:none;background:rgba(0,0,0,0.5);}
+.letter__border {background:white;border-radius:20px;width:80%;max-width:600px;margin:auto;padding:20px;position:relative;top:50%;transform:translateY(-50%);}
+.close {position:absolute;top:10px;right:10px;cursor:pointer;font-weight:bold;font-size:20px;}
+.final-message { max-width: 450px; margin: 34px auto; padding: 16px; background: #ffe6ef; text-align: center; border-radius: 18px; color: #e61a52; }
+.hug-emoji { font-size: 1.6em; }
+#heart-rain span { animation: heartfloat 7s linear infinite; }
+@keyframes heartfloat { from{transform:translateY(0);} to{transform:translateY(-100vh);} }

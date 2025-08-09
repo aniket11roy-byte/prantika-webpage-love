@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prantika’s Comfort Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Welcome Screen -->
+  <div id="welcome-screen" class="centered-screen">
+    <button id="welcome-btn" class="big-btn">Welcome Prantika</button>
+  </div>
+
+  <!-- Song Prompt -->
+  <div id="song-prompt" class="centered-screen" style="display:none;">
+    <div class="song-question">Would you like to listen to a song?</div>
+    <button id="song-yes" class="big-btn">Yes</button>
+  </div>
+
+  <!-- Main Comfort Page -->
+  <div id="main-interface" style="display:none;">
+    <audio id="bg-song" src="prantika_song.mp3" preload="auto"></audio>
+
+    <div class="heart-greeting">
+      <span>Dear Prantika 🌸,</span>
+      <p>This page is a gentle hug, a whisper to your soul, a celebration of the light you bring—especially in tough moments.</p>
+    </div>
+
+    <div class="title">
+      <div class="happy"><span>Hey Prantika 💐</span></div>
+      <div class="birthday"><span>You Deserve Comfort & Care 💖</span></div>
+    </div>
+
+    <div class="sticky-note">
+      <span>🌷</span>
+      <p>You’re never alone in anything you’re facing.<br>
+         Your presence makes tough days easier.<br>
+         You bring peace and positivity wherever you go.<br>
+         Your well-being matters—always, in every way.</p>
+    </div>
+
+    <div class="pamper-message">
+      <p>Even on challenging days, remember it's okay to take things slow. Treat yourself gently and let kindness guide your way.</p>
+    </div>
+
+    <div class="photo-gallery">
+      <div class="photo-frame">
+        <img src="IMG-20250809-WA0012.jpg" alt="">
+        <div class="caption">Gorgeous Prantika, singing with a smile 🌸</div>
+      </div>
+      <div class="photo-frame">
+        <img src="IMG-20250809-WA0011.jpg" alt="">
+        <div class="caption">Her magical day with a rainbow ✨🌈</div>
+      </div>
+    </div>
+
+    <div class="video-gallery">
+      <div class="video-frame">
+        <iframe src="https://drive.google.com/file/d/1OTThrjT2fgoKbzQ-4l8TixAlsSsLdt1N/preview"></iframe>
+        <div class="caption">Performance 🎶</div>
+      </div>
+      <div class="video-frame">
+        <iframe src="https://drive.google.com/file/d/1OZjxJxHprKz2CbolQ7nZwbRWqKBqSxxJ/preview"></iframe>
+        <div class="caption">Melody Moments ✨</div>
+      </div>
+      <div class="video-frame">
+        <iframe src="https://drive.google.com/file/d/1OQl5yiof4AKPq-rU4dRj2XyW3WHr7bSr/preview"></iframe>
+        <div class="caption">Singing Magic 🌸</div>
+      </div>
+    </div>
+
+    <div class="open-letter-btn" style="text-align:center; margin:30px 0;">
+      <button id="btn__letter" class="reactive-btn">💌 Open Uplifting Note</button>
+    </div>
+    <div class="box__letter">
+      <div class="letter__border">
+        <div class="close">×</div>
+        <div class="letter">
+          <div class="title__letter">A Little Note Just for You</div>
+          <div class="text__letter">
+            Dear Prantika,<br><br>
+            I know some days aren’t easy...<br>
+            Wishing you comfort, brighter days ahead, and lots of smiles.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="final-message">
+      <p>On tough days and bright ones, you always deserve kindness, good vibes, and encouragement.<br>
+      <span class="hug-emoji">🤗🌟</span></p>
+    </div>
+    <footer id="copy">
+      <p>Created to brighten your day, Prantika!</p>
+    </footer>
+  </div>
+
+  <div id="heart-rain"></div>
+  <script src="script.js"></script>
+</body>
+</html>
